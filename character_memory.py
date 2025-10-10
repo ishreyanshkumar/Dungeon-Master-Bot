@@ -1,27 +1,26 @@
-# character_memory.py
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embs = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-def init_character_memory():
-    """Initialize a Chroma DB for NPC-specific memories."""
-    vectorstore = Chroma(
-        embedding_function=embedding_function,
+# Initializes the vector DB for character memories
+def init_chars():
+    char_db = Chroma(
+        embedding_function=embs,
         persist_directory="./chroma_db_characters"
     )
-    return vectorstore.as_retriever(search_kwargs={'k': 3})
+    return char_db.as_retriever(search_kwargs={'k': 3})
 
-def add_character_memory(retriever, npc_name, memory_text):
-    """Store memory linked to an NPC."""
-    retriever.vectorstore.add_texts(
-        [memory_text],
-        metadatas=[{"character": npc_name}]
+# Stores a new memory for a character
+def add_char_mem(char_ret, name, mem):
+    char_ret.vectorstore.add_texts(
+        [mem],
+        metadatas=[{"character": name}]
     )
 
-def get_character_memories(retriever, npc_name):
-    """Retrieve memories relevant to an NPC."""
-    docs = retriever.get_relevant_documents(npc_name)
+# Retrieves relevant memories for a character
+def get_char_mem(char_ret, name):
+    docs = char_ret.get_relevant_documents(name)
     if not docs:
         return "No significant memory of this character."
-    return "\n".join([d.page_content for d in docs])
+    return "\n".join([doc.page_content for doc in docs])
