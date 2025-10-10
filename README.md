@@ -90,7 +90,7 @@ Follow these steps to set up and run the project locally.
 
 First, clone the repository to your local machine:
 ```bash
-git clone [https://github.com/your-username/ai-dungeon-master.git](https://github.com/your-username/ai-dungeon-master.git)
+git clone [https://github.com/iShreyanshKumar/ai-dungeon-master.git](https://github.com/iShreyanshKumar/ai-dungeon-master.git)
 cd ai-dungeon-master
 ```
 
@@ -107,7 +107,6 @@ source venv/bin/activate
 # Install packages
 pip install -r requirements.txt
 ```
-*(You will need to create a `requirements.txt` file containing the necessary packages like `streamlit`, `langchain-groq`, `langchain`, `chromadb`, `sentence-transformers`, `python-dotenv`.)*
 
 ### 3. Environment Variables
 
