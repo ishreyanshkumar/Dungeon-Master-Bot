@@ -2,6 +2,8 @@
 
 Welcome to the AI Dungeon Master, an interactive text-based RPG powered by a Large Language Model (LLM) with a persistent, multi-layered memory system. This project allows you to embark on dynamic adventures where the world and its inhabitants remember your actions.
 
+Video Demo- [https://drive.google.com/file/d/1HbjGHnX1QaEV-Dsk1_ozXzBJgVDvh5eh/view?usp=sharing](https://drive.google.com/file/d/1HbjGHnX1QaEV-Dsk1_ozXzBJgVDvh5eh/view?usp=sharing)
+
 ---
 
 ## ✨ Features
@@ -140,7 +142,5 @@ Open your web browser and navigate to the local URL provided by Streamlit. Start
 ├── requirements.txt        # Project dependencies
 └── .env                    # Environment variables (API keys)
 ```
-
-Video Demo- [https://drive.google.com/file/d/1HbjGHnX1QaEV-Dsk1_ozXzBJgVDvh5eh/view?usp=sharing](https://drive.google.com/file/d/1HbjGHnX1QaEV-Dsk1_ozXzBJgVDvh5eh/view?usp=sharing)
 
 ---
