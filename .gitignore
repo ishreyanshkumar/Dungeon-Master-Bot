@@ -2,5 +2,6 @@
 .vscode
 chroma_db_dm/
 chroma_db_characters/
+chroma_db_quests/
 MLAI PS.pdf
 __pycache__/
