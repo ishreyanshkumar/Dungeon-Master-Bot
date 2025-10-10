@@ -20,23 +20,23 @@ The application is built on a modular architecture that separates the user inter
 
 ```mermaid
 graph TD
-    A[User via Streamlit UI] --> B{Backend Logic};
-    B --> C[Narrative Generation Chain];
-    C --> D{LLM (Groq)};
-    D --> B;
-    B --> A;
+    A[User via Streamlit UI] --> B{Backend Logic}
+    B --> C[Narrative Generation Chain]
+    C --> D{LLM (Groq)}
+    D --> B
+    B --> A
 
     subgraph Memory Layer
-        B --> E[Short-Term Memory];
-        B --> F[Long-Term Memory DB];
-        B --> G[Character Memory DB];
-        B --> H[Quest Memory DB];
+        B --> E[Short-Term Memory]
+        B --> F[Long-Term Memory DB]
+        B --> G[Character Memory DB]
+        B --> H[Quest Memory DB]
     end
 
     subgraph Context Assembly
-        E --> C;
-        F --> C;
-        G --> C;
+        E --> C
+        F --> C
+        G --> C
     end
 ```
 
@@ -142,7 +142,3 @@ Open your web browser and navigate to the local URL provided by Streamlit. Start
 ```
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
