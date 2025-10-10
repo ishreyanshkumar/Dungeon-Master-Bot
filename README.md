@@ -20,17 +20,17 @@ The application is built on a modular architecture that separates the user inter
 
 ```mermaid
 graph TD
-    A[User via Streamlit UI] --> B{Backend Logic}
-    B --> C[Narrative Generation Chain]
-    C --> D{LLM (Groq)}
+    A["User via Streamlit UI"] --> B["Backend Logic"]
+    B --> C["Narrative Generation Chain"]
+    C --> D["LLM (Groq)"]
     D --> B
     B --> A
 
     subgraph Memory Layer
-        B --> E[Short-Term Memory]
-        B --> F[Long-Term Memory DB]
-        B --> G[Character Memory DB]
-        B --> H[Quest Memory DB]
+        B --> E["Short-Term Memory"]
+        B --> F["Long-Term Memory DB"]
+        B --> G["Character Memory DB"]
+        B --> H["Quest Memory DB"]
     end
 
     subgraph Context Assembly
