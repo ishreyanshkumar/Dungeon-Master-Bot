@@ -1,0 +1,6 @@
+.env
+.vscode
+chroma_db_dm/
+chroma_db_characters/
+MLAI PS.pdf
+__pycache__/
