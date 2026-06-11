@@ -1,6 +1,8 @@
 # ⚔️ AI Dungeon Master — Ultimate Edition
 
-An interactive text-based RPG powered by Groq LLaMA with a deep, living world engine and advanced cognitive architecture.
+Welcome to the AI Dungeon Master, an interactive text-based RPG powered by a Large Language Model (LLM) with a persistent, multi-layered memory system. This project allows you to embark on dynamic adventures where the world and its inhabitants remember your actions.
+
+Video Demo- https://drive.google.com/file/d/1HbjGHnX1QaEV-Dsk1_ozXzBJgVDvh5eh/view?usp=sharing
 
 ![AI Dungeon Master](https://img.shields.io/badge/Powered_by-Groq_LLaMA-c9a84c?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-2d6a3f?style=for-the-badge)
