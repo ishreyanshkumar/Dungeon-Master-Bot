@@ -1,7 +1,11 @@
 .env
-.vscode
-chroma_db_dm/
-chroma_db_characters/
-chroma_db_quests/
-MLAI PS.pdf
 __pycache__/
+*.pyc
+campaigns/
+.chroma/
+chroma_db_*/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
